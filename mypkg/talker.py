@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Mei Kondo
+# SPDX-FileCopyrightText: 2023 Keigo Shishido
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
