@@ -4,12 +4,12 @@
 
 このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリです。
 
-# 各ノードの説明
-## talker
-## listener
-## launch
+## 各ノードの説明
+* talker
+* listener
+* launch
 
-# ダウンロード
+## ダウンロード
 
 ```
 $ git clone https://github.com/keigo0918/ros2_ws.git
@@ -19,9 +19,9 @@ $ git clone https://github.com/keigo0918/ros2_ws.git
 $ cd ros2_ws
 ```
 
-# 実行結果
+## 実行結果
 
-## talkerの実行結果
+* talkerの実行結果
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg talker
@@ -29,7 +29,7 @@ $ ros2 run mypkg talker
 ```
 Ctrl+Cで終了。
 
-## listenerの実行結果
+* listenerの実行結果
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg listener
@@ -40,7 +40,7 @@ $ ros2 run mypkg listener
 ```
 Ctrl+Cで終了。
 
-## launchの実行結果
+* launchの実行結果
 ```
 $ ros2 launch mypkg talk_listen.launch.py 
 [listener-2] [INFO] [1703318314.068463454] [listener]: Listen: 0
@@ -61,4 +61,4 @@ Ctrl+Cで終了。
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを本人の許可を得て自身の著作として改変したものです.
   * [ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 
-© 2023 Keigo Shishido  
+* © 2023 Keigo Shishido  
