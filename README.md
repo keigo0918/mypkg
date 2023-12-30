@@ -11,7 +11,7 @@
   * メッセージの型は１６ビット符号付き整数。
     
 * listener
-  * /countup から受け取ったメッセージを表示する。
+  * `/countup` から受け取ったメッセージを表示する。
     
 * launch
   * talkerとlistenerを同時に動かせるようにしたノード。
@@ -24,13 +24,13 @@ $ git clone https://github.com/keigo0918/ros2_ws.git
 
 ## 実行結果
 
-* talkerの実行結果
+* "talkerの実行結果"
 単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
 ```
 $ ros2 run mypkg talker
 #画面には何も表示されません
 ```
-  Ctrl+Cで終了。
+  `Ctrl+C` で終了。
 
 * listenerの実行結果
 単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
