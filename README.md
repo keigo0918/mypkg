@@ -24,7 +24,7 @@ $ git clone https://github.com/keigo0918/ros2_ws.git
 
 ## 実行結果
 
-* _talkerの実行結果_
+* __talkerの実行結果__
   
 単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
 ```
@@ -33,7 +33,7 @@ $ ros2 run mypkg talker
 ```
   `Ctrl+C` で終了。
 
-* _listenerの実行結果_
+* __listenerの実行結果__
   
 単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
 ```
@@ -45,7 +45,7 @@ $ ros2 run mypkg listener
 ```
   `Ctrl+C`で終了。
 
-* _launchの実行結果_
+* __launchの実行結果__
   
 ```
 $ ros2 launch mypkg talk_listen.launch.py 
