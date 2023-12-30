@@ -21,14 +21,14 @@ $ cd ros2_ws
 
 # 実行手順と実行結果
 
-##talkerの使い方
+## talkerの使い方
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg talker
 #画面には何も表示されません
 ```
 
-##listenerの使い方
+## listenerの使い方
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg listener
@@ -38,7 +38,7 @@ $ ros2 run mypkg listener
 ・・・
 ```
 
-##launchの使い方
+## launchの使い方
 ```
 $ ros2 launch mypkg talk_listen.launch.py 
 [listener-2] [INFO] [1703318314.068463454] [listener]: Listen: 0
