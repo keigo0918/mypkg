@@ -2,10 +2,11 @@
 
 [![test](https://github.com/keigo0918/ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/keigo0918/ros2_ws/actions/workflows/test.yml)
 
-このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリです。
+このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリである。
 
 ## 各ノードの説明
 * talker
+  * naosv
 * listener
 * launch
 
@@ -22,7 +23,7 @@ $ cd ros2_ws
 ## 実行結果
 
 * talkerの実行結果
-単体で動作させる際は、下記のコマンドを打ち込んでください。
+単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
 ```
 $ ros2 run mypkg talker
 #画面には何も表示されません
@@ -30,7 +31,7 @@ $ ros2 run mypkg talker
 Ctrl+Cで終了。
 
 * listenerの実行結果
-単体で動作させる際は、下記のコマンドを打ち込んでください。
+単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
 ```
 $ ros2 run mypkg listener
 [INFO] [1703316207.377518470] [listener]: Listen: 0
