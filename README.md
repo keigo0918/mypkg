@@ -22,10 +22,6 @@
 $ git clone https://github.com/keigo0918/ros2_ws.git
 ```
 
-```
-$ cd ros2_ws
-```
-
 ## 実行結果
 
 * talkerの実行結果
