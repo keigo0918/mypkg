@@ -1,23 +1,16 @@
-# SPDX-FileCopyrightText: 2023 Keigo Shishido
-# SPDX-License-Identifier: BSD-3-Clause
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from person_msgs.srv import Query
 
-class Talker():
-    def __init__(self, node):
-        self.pub = node.create_publisher(Int16, "countup", 10)
-        self.n = 0
-        node.create_timer(0.5, self.cb)
+def cb(request, response):
+    if request.name == "宍戸　奎吾":
+        response.age = 20
+    else:
+        response.age = 255
 
-    def cb(self):
-        msg = Int16()
-        msg.data = self.n
-        self.pub.publish(msg)
-        self.n += 1
+    return response
 
-def main():
-    rclpy.init()
-    node = Node("talker")
-    talker = Talker(node)
-    rclpy.spin(node)
+rclpy.init()
+node = Node("talker")
+srv = node.create_service(Query, "query", cb)
+rclpy.spin(node)
