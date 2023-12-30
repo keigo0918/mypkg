@@ -4,11 +4,12 @@
 
 このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリです。
 
-# talker
-# listener
-# launch
+# 各ノードの説明
+## talker
+## listener
+## launch
 
-## ダウンロード
+# ダウンロード
 
 ```
 $ git clone https://github.com/keigo0918/ros2_ws.git
@@ -18,31 +19,31 @@ $ git clone https://github.com/keigo0918/ros2_ws.git
 $ cd ros2_ws
 ```
 
-## 実行手順と実行結果
+# 実行手順と実行結果
 
-*talkerの使い方
+##talkerの使い方
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg talker
 #画面には何も表示されません
 ```
 
-*listenerの使い方
+##listenerの使い方
 単体で動作させる際は、下記のコマンドを打ち込んでください。
 ```
 $ ros2 run mypkg listener
-[INFO] [1703314540.253223410] [listener]: Listen: 0
-[INFO] [1703314540.732753899] [listener]: Listen: 1
-[INFO] [1703314541.231645432] [listener]: Listen: 2
+[INFO] [1703316207.377518470] [listener]: Listen: 0
+[INFO] [1703316207.869697454] [listener]: Listen: 1
+[INFO] [1703316208.376130983] [listener]: Listen: 2
 ・・・
 ```
 
-*launchの使い方
+##launchの使い方
 ```
 $ ros2 launch mypkg talk_listen.launch.py 
-[listener-2] [INFO] [1703315431.311982248] [listener]: Listen: 0
-[listener-2] [INFO] [1703315431.792204733] [listener]: Listen: 1
-[listener-2] [INFO] [1703315432.292378318] [listener]: Listen: 2
+[listener-2] [INFO] [1703318314.068463454] [listener]: Listen: 0
+[listener-2] [INFO] [1703318314.568180831] [listener]: Listen: 1
+[listener-2] [INFO] [1703318315.068308484] [listener]: Listen: 2
 ・・・
 ```
 
@@ -50,7 +51,8 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 ## テスト環境
 
-* Ubuntu 22.04
+* Ubuntu 20.04
+* ROS2 foxy
 
 ## ライセンス
 
