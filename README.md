@@ -5,10 +5,16 @@
 このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリである。
 
 ## 各ノードの説明
+
 * talker
-  * naosv
+  * 0から0.5秒ごとにカウントをアップを行い/countup を通じ、送信する。
+  * メッセージの型は１６ビット符号付き整数。
+    
 * listener
+  * /countup から受け取ったメッセージを表示する。
+    
 * launch
+  * talkerとlistenerを同時に動かせるようにしたノード。
 
 ## ダウンロード
 
@@ -28,7 +34,7 @@ $ cd ros2_ws
 $ ros2 run mypkg talker
 #画面には何も表示されません
 ```
-Ctrl+Cで終了。
+  Ctrl+Cで終了。
 
 * listenerの実行結果
 単体で動作させる際は、下記のコマンドを打ち込むことで実行可能。
@@ -39,7 +45,7 @@ $ ros2 run mypkg listener
 [INFO] [1703316208.376130983] [listener]: Listen: 2
 ・・・
 ```
-Ctrl+Cで終了。
+  Ctrl+Cで終了。
 
 * launchの実行結果
 ```
@@ -49,7 +55,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703318315.068308484] [listener]: Listen: 2
 ・・・
 ```
-Ctrl+Cで終了。
+  Ctrl+Cで終了。
 
 ## テスト環境
 
