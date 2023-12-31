@@ -3,7 +3,7 @@ from rclpy.node import Node
 from person_msgs.srv import Query
 
 def cb(request, response):
-    if request.name == "宍戸　奎吾":
+    if request.name == "宍戸奎吾":
         response.age = 20
     else:
         response.age = 255
