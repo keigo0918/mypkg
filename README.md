@@ -2,20 +2,23 @@
 
 [![test](https://github.com/keigo0918/ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/keigo0918/ros2_ws/actions/workflows/test.yml)
 
-このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にて作成したリポジトリである。
+このリポジトリは千葉工業大学先進工学部未来ロボティクス学科2023年度ロボットシステム学の講義にてROS2の練習用に作成したリポジトリである。
 
 ## 各ノードの説明
 
 * talker
   * 0から0.5秒ごとにカウントをアップを行い `/countup` を通じ、送信する。
-  * メッセージの型は１６ビット符号付き整数。
+  * メッセージの型は16ビット符号付き整数。
     
 * listener
   * `/countup` から受け取ったメッセージを表示する。
-    
-* launch
-  * talkerとlistenerを同時に動かせるようにしたノード。
 
+## トピックの説明
+
+### countup
+
+ * 16ビット符号付整数をカウントアップする。
+   
 ## ダウンロード
 
 ```
