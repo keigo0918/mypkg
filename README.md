@@ -51,11 +51,14 @@ $ ros2 launch mypkg talk_listen.launch.py
 ・・・
 ```
   `Ctrl+C`で終了。
+## 必要なソフトウェア
 
+* ROS2 foxy
+* python
+  
 ## テスト環境
 
 * Ubuntu 20.04
-* ROS2 foxy
 
 ## ライセンス
 
